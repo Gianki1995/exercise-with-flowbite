@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise with Flowbite</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body>
+    <div class="antialiased bg-gray-50 dark:bg-gray-900">
+        <nav
+            class="bg-gray-700 border-b border-gray-200 px-4 py-2.5 dark:bg-gray-800 dark:border-gray-700 fixed left-0 right-0 top-0 z-50">
+            <div class="flex flex-wrap justify-between items-center">
+                <div class="flex justify-start items-center">
+                    <button data-drawer-target="drawer-navigation" data-drawer-toggle="drawer-navigation"
+                        aria-controls="drawer-navigation"
+                        class="p-2 mr-2 text-gray-600 rounded-lg cursor-pointer md:hidden hover:text-gray-900 hover:bg-gray-100 focus:bg-gray-100 dark:focus:bg-gray-700 focus:ring-2 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                        <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <svg aria-hidden="true" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="sr-only">Toggle sidebar</span>
+                    </button>
+                    <a s class="flex items-center justify-between mr-4">
+                        <img src="https://flowbite.s3.amazonaws.com/logo.svg" class="mr-3 h-8" alt="Flowbite Logo" />
+                        <span
+                            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                    </a>
+
+
+
+
+
+
+                    <!-- Dropdown menu -->
+                    <div class="hidden z-50 my-4 w-56 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600 rounded-xl"
+                        id="dropdown">
+                        <div class="py-3 px-4">
+                            <span class="block text-sm font-semibold text-gray-900 dark:text-white">Neil Sims</span>
+                            <span class="block text-sm text-gray-900 truncate dark:text-white">name@flowbite.com</span>
+                        </div>
+                        <ul class="py-1 text-gray-700 dark:text-gray-300" aria-labelledby="dropdown">
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">My
+                                    profile</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Account
+                                    settings</a>
+                            </li>
+                        </ul>
+                        <ul class="py-1 text-gray-700 dark:text-gray-300" aria-labelledby="dropdown">
+                            <li>
+                                <a href="#"
+                                    class="flex items-center py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"><svg
+                                        class="mr-2 w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    My likes</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex items-center py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"><svg
+                                        class="mr-2 w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z">
+                                        </path>
+                                    </svg>
+                                    Collections</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex justify-between items-center py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                    <span class="flex items-center">
+                                        <svg aria-hidden="true"
+                                            class="mr-2 w-5 h-5 text-primary-600 dark:text-primary-500"
+                                            fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        Pro version
+                                    </span>
+                                    <svg aria-hidden="true" class="w-5 h-5 text-gray-400" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="py-1 text-gray-700 dark:text-gray-300" aria-labelledby="dropdown">
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
+                                    out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Sidebar -->
+
+        <aside
+            class="fixed top-0 left-0 z-40 w-64 h-screen pt-14 transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
+            aria-label="Sidenav" id="drawer-navigation">
+            <div class="overflow-y-auto py-5 px-3 h-full bg-white dark:bg-gray-800">
+
+                <ul class="space-y-2">
+                    <li>
+                        <button onclick="navigateTo('pagina-api')"
+                            class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                            <svg aria-hidden="true"
+                                class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                                fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+                                <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
+                            </svg>
+                            <span class="ml-3">Data API</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button href="#" onclick="navigateTo('pagina-scroll')"
+                            class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" />
+                            </svg>
+
+                            <span class="ml-3">Scroll</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="navigateTo('pagina-modulo')"
+                            class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 3.75H6.912a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859M12 3v8.25m0 0-3-3m3 3 3-3" />
+                            </svg>
+
+                            <span class="ml-3">Form</span>
+                        </button>
+                    </li>
+
+
+                    <!-- Dropdown -->
+                </ul>
+        </aside>
+
+        <main class="p-4 md:ml-64 h-auto pt-20" id="routing-outlet">
+            <!-- pagina api -->
+            <section id="pagina-api" class="p-5 grid grid-cols-2 md:grid-cols-3 gap-4">
+
+                <!-- <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt="">
+                </div> -->
+
+
+            </section>
+
+            <!-- pagina scroll -->
+            <section id="pagina-scroll" class="hidden p-5 relative">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quam earum, hic reiciendis recusandae
+                atque adipisci consectetur molestiae optio labore esse odio quis, eos iure voluptate id delectus qui?
+                Commodi explicabo expedita quos hic? Harum quisquam sunt dolor facilis numquam neque delectus! Quidem
+                animi dolorum velit earum consequuntur voluptatem repellat officia saepe. Deserunt neque soluta
+                recusandae, est minima quo libero, provident ab aperiam odio ut nulla totam laborum repellat ipsam?
+                Exercitationem vel excepturi culpa amet tempore possimus suscipit voluptatem delectus pariatur ipsum,
+                deleniti accusantium recusandae corrupti distinctio non in ipsa itaque! Possimus, hic consequuntur!
+                Ipsum, veniam at illum voluptate nihil in harum fugiat architecto magni accusantium perferendis
+                provident qui ullam maiores iusto porro aperiam perspiciatis. Debitis adipisci, cupiditate sapiente sed
+                saepe veritatis architecto fugiat a, odio qui perspiciatis voluptates vitae non laborum officiis
+                consectetur minima? Alias est suscipit expedita illum commodi deserunt architecto, explicabo blanditiis,
+                consectetur assumenda at ut perspiciatis? Blanditiis nam natus, perferendis itaque dolorum ea
+                consequatur cum placeat cupiditate quas, libero dolores! Ex repudiandae, mollitia saepe dignissimos
+                nulla eligendi aliquam beatae culpa quibusdam molestias odit non corporis voluptas sequi sed provident
+                eos nemo quidem perspiciatis? Recusandae minus rerum adipisci omnis facere. Hic quis deserunt error
+                cumque neque blanditiis maiores nobis ex commodi, laboriosam delectus maxime eos quibusdam porro aut
+                illo laudantium! Quos et amet, perspiciatis alias ipsam repudiandae? Non dolore maxime doloremque quod.
+                Ipsam necessitatibus, blanditiis amet doloremque, vitae dolor voluptas enim voluptatibus ipsum maxime
+                tempora harum deleniti iste. Distinctio reprehenderit, voluptatum libero consectetur nihil ipsum. Error
+                distinctio porro aspernatur at impedit ut dolorum repudiandae suscipit enim dolore quis nesciunt
+                blanditiis, deserunt mollitia qui consectetur similique, officiis praesentium vel sequi architecto
+                alias, libero non. Dolore odio animi atque, velit cumque assumenda est aliquid? Culpa obcaecati eligendi
+                sit saepe natus iste, blanditiis reiciendis. Eius doloremque excepturi perspiciatis labore corrupti
+                quas, harum laudantium praesentium saepe optio temporibus quis aliquam quibusdam! Ad minima dolor eum
+                aliquid, veniam itaque quisquam harum corrupti corporis porro sit quaerat ratione aut laboriosam.
+                Ducimus, doloribus velit! Sit inventore nulla labore debitis dolor esse eum magni expedita quos iusto
+                vero, incidunt laboriosam qui necessitatibus similique repellat corporis corrupti, nemo iure quam.
+                Consequuntur quae obcaecati amet est esse facilis quibusdam optio ratione! Cumque minus laborum quaerat
+                ea similique eos fugiat impedit. Veritatis, atque neque modi deleniti esse aliquam amet velit officia
+                mollitia quos? Nesciunt, magnam doloremque, quam incidunt corporis dignissimos animi rem iste quaerat
+                delectus quasi quidem saepe voluptatem. Facilis nam laborum maxime id? Aut, blanditiis? Delectus,
+                suscipit excepturi temporibus quis repellendus at quos nostrum est debitis, libero obcaecati natus minus
+                magni ad voluptatum, ipsa explicabo veniam iure sequi exercitationem. Quas ipsa suscipit voluptatibus
+                quisquam animi dignissimos excepturi, fugiat commodi magni esse saepe, ratione rerum vero, ducimus fuga
+                officia libero? Nemo accusantium recusandae, ad delectus quo odio necessitatibus excepturi aut explicabo
+                ex! Cupiditate nihil consequuntur porro quis, ad molestiae? Suscipit pariatur dolorum deserunt harum
+                dolores. Culpa eum recusandae omnis aperiam, tempore deleniti ea quam expedita adipisci vitae totam
+                reiciendis, atque odio rem delectus ullam eligendi nostrum. Iure aliquid voluptate voluptatibus fuga
+                iste sequi vel modi recusandae minima tempore aspernatur voluptatem eveniet aliquam accusantium
+                inventore, optio repudiandae possimus minus ratione. Optio, incidunt temporibus. Sequi obcaecati earum
+                voluptatem veniam nesciunt libero voluptate consequuntur voluptatibus! Debitis consectetur quisquam
+                veniam neque quo consequatur quae officiis inventore at officia nostrum culpa quam nesciunt, maiores,
+                quis dolores expedita esse magnam, sunt quidem! Iusto suscipit unde numquam est distinctio
+                necessitatibus iste iure, ipsam corrupti aut sequi velit maxime similique doloremque animi recusandae
+                incidunt mollitia? Nobis reprehenderit corporis consequuntur quidem ex mollitia, saepe laudantium ullam
+                obcaecati ipsam possimus facilis fuga sint, unde vero eveniet placeat enim aliquam tenetur quam,
+                distinctio assumenda similique! Sint, consequatur, dolor sequi modi aut autem cumque minus sit error
+                repudiandae, quis quia reprehenderit facere nulla distinctio animi repellat minima. Sit laudantium magni
+                vel sint amet neque velit suscipit fugit quod fugiat, voluptatem dolorem sunt dolore aspernatur
+                perspiciatis autem dicta consequuntur odit! Porro, tempora, sapiente quos blanditiis unde obcaecati
+                inventore hic expedita dicta atque rem placeat in voluptates nam ea ipsam reiciendis mollitia, odio
+                eveniet fugiat tenetur. Provident voluptatem hic sapiente similique magnam iusto dolores! Repellat at
+                earum amet vel, non alias provident explicabo laborum qui voluptatum quasi tempore fugiat maiores illo
+                ratione natus ut nemo impedit soluta, laboriosam iste. Iusto et reiciendis nostrum non, impedit nesciunt
+                hic in corrupti autem placeat perspiciatis illo suscipit quae quia asperiores. Quam, libero voluptate
+                quisquam quia doloremque et magni esse impedit! Amet fuga harum distinctio natus nostrum sit ab, sint
+                libero et velit. Iste, aliquam quo cum dicta, sapiente hic eos harum natus repellendus optio praesentium
+                unde quia vitae! Provident nemo animi molestiae amet, suscipit consectetur? Eos adipisci tempore
+                quibusdam inventore, magnam doloribus illum voluptates nisi sequi quae ipsam iusto atque ullam quia
+                aperiam laudantium voluptas non! Reiciendis obcaecati voluptas repudiandae sit harum velit aperiam
+                labore unde earum maxime! Culpa consequuntur atque ab non sapiente consequatur, reprehenderit nostrum
+                error porro, deleniti iusto nisi amet recusandae doloribus inventore ratione illum voluptate tenetur
+                pariatur in animi? Praesentium maxime totam cum eaque minima commodi magni saepe rem quibusdam vel
+                impedit nobis nostrum at, voluptates animi sequi facere veritatis sunt aut? Temporibus, aut voluptas
+                eius odio et similique ea fugiat. Libero modi itaque illum quasi. Doloribus voluptates, voluptas dolore
+                ipsum ab veritatis, dolorum velit natus, itaque maiores soluta architecto sint eveniet praesentium
+                nostrum dolores? Minima, neque. Hic impedit voluptatibus fugiat commodi officia labore veniam temporibus
+                autem eaque nesciunt facilis natus nulla saepe quod reprehenderit sapiente, facere blanditiis rerum
+                tempora! Voluptas debitis assumenda tenetur nobis eius commodi aliquam amet alias necessitatibus rerum
+                corporis nulla cumque, veniam numquam fugiat deleniti labore nam dolores maiores, animi praesentium.
+                Porro asperiores iure nostrum pariatur mollitia provident, optio consequatur dignissimos quae, maxime
+                similique. Corrupti fugit provident quas odio nemo, expedita pariatur cumque adipisci nam. Earum
+                veritatis quod quis cumque, delectus perspiciatis molestiae possimus dolorum esse dolores minus
+                repellendus at consequatur laudantium quo rerum provident? Alias asperiores dignissimos corrupti at
+                doloribus harum nobis, voluptas porro cumque iusto. Eveniet modi totam, quasi nemo tenetur reiciendis
+                aliquid possimus magni.
+                <button onclick="handleScrollTop()" id="torna-su"
+                    class="p-4 bg-blue-500 text-white flex justify-center items-center fixed bottom-5 right-5 rounded-full hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                    </svg>
+
+                </button>
+            </section>
+
+            <!-- pagina modulo -->
+            <section id="pagina-modulo" class="bg-gray-50 dark:bg-gray-900 hidden">
+                <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+                    <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+                        <img class="w-8 h-8 mr-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg"
+                            alt="logo">
+                        Flowbite
+                    </a>
+                    <div
+                        class="w-full p-6 bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md dark:bg-gray-800 dark:border-gray-700 sm:p-8">
+                        <h2
+                            class="mb-1 text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+                            Change Password
+                        </h2>
+                        <form class="mt-4 space-y-4 lg:mt-5 md:space-y-5 bg-blue-500" action="#">
+                            <div>
+                                <label for="email"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                                    email</label>
+                                <input type="text" name="email" id="email"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="name@company.com">
+                            </div>
+                            <div>
+                                <label for="password"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">New
+                                    Password</label>
+                                <input type="text" name="password" id="password" placeholder="••••••••"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="confirm-password"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confirm
+                                    password</label>
+                                <input type="text" name="confirm-password" id="confirm-password" placeholder="••••••••"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex items-center h-5">
+                                    <input id="newsletter" aria-describedby="newsletter" type="checkbox"
+                                        class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800">
+                                </div>
+                                <div class="ml-3 text-sm">
+                                    <label for="newsletter" class="font-light text-gray-500 dark:text-gray-300">I accept
+                                        the <a
+                                            class="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                                            href="#">Terms and Conditions</a></label>
+                                </div>
+                            </div>
+                            <button type="submit"
+                                class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Reset
+                                password</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+    <script>
+        const sezione = document.getElementById("pagina-scroll")
+        const tornaSu = document.getElementById("torna-su")
+        let currentPage = 'pagina-scroll';
+
+
+        function navigateTo(page) {
+            const main = document.querySelector('main')
+            const sections = main.querySelectorAll('section')
+            history.pushState({ page }, null, page)
+            currentPage = page
+
+            for (const section of sections) {
+                if (section.id == page) {
+                    section.classList.remove("hidden")
+                } else {
+                    section.classList.add("hidden")
+                }
+
+            }
+
+        }
+        function handleScrollTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            })
+        }
+
+        window.addEventListener('scroll', function () {
+            if (currentPage == 'pagina-scroll') {
+                const altezzaSezione = sezione.clientHeight
+                const posizioneScroll = window.screenY || window.pageYOffset
+
+                const percentualeScroll = (posizioneScroll / altezzaSezione) * 100
+
+                if (percentualeScroll >= 20) {
+                    tornaSu.classList.remove('hidden')
+                } else {
+                    tornaSu.classList.add('hidden')
+                }
+            }
+        })
+
+        fetch('https://dog.ceo/api/breeds/image/random/20')
+            .then(response => response.json())
+            .then(data => {
+                const paginaApi = document.getElementById("pagina-api")
+                data.message.forEach(imageSrc => {
+                    const divContainer = document.createElement('div')
+                    const image = document.createElement('img');
+                    image.className = 'h-auto max-w-full rounded-lg'
+                    image.src = imageSrc
+                    divContainer.appendChild(image)
+                    paginaApi.appendChild(divContainer)
+                });
+            })
+
+        const form = document.querySelector('form');
+        form.addEventListener("submit", (event) => {
+            event.preventDefault()
+
+            const emailInput = document.getElementById("email");
+            const passwordInput = document.getElementById("password");
+            const confirmPasswordInput = document.getElementById("confirm-password")
+            const newsLetterInput = document.getElementById("newsletter")
+
+            const emailRegex = /^\S+@\S+\.\S+$/;
+            if (!emailRegex.test(emailInput.value)) {
+                alert("email non valida")
+                return
+            }
+
+            const passwordRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/
+            if (!passwordRegex.test(passwordInput.value)) {
+                alert("password non valida")
+                console.log(passwordRegex.test(passwordInput.value))
+                return
+            }
+
+
+            if (passwordInput.value !== confirmPasswordInput.value) {
+                alert("le password non coincidono")
+                return
+            }
+
+            if (!newsLetterInput.checked) {
+                alert("conferma termini e condizioni per andare avanti")
+            }
+
+            alert("iscrizione completata")
+
+        })
+
+    </script>
+</body>
+
+
+</html>
